@@ -1,7 +1,8 @@
 import React from "react";
+import {Part} from './styled.js'
 
-export default function Escena() {
+export default function Escena(props) {
     return(
-        <p>"El nostre heroi estava surant per l'espai sideral quan a la llunyania va albirar una nau espacial"</p>
+        <Part className={props.isSelected}>{props.part}</Part>
     )
 }
