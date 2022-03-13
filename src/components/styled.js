@@ -20,3 +20,7 @@ export const Btn = styled.button`
     padding: 1rem;
     margin: 1rem;
 `
+
+export const Background = styled.body`
+    background-image: url(${props => props.image})
+`

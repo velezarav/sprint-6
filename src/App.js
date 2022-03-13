@@ -2,7 +2,8 @@ import React, {useState} from 'react';
 import './App.css';
 import Escena from './components/Escena';
 import Btn from './components/Btn';
-import data from './data.json'
+import {dataParts} from './data.js'
+import {Background} from './components/styled'
 
 function App() {
   const [position, setPosition] = useState(0);
@@ -21,7 +22,6 @@ function App() {
     setPosition(prevPosition => prevPosition === 3 ? 0 : prevPosition + 1)
   }
   
-  const dataParts = [...data]
   const parts = dataParts.map(part => <Escena key={part} part={part.txt} isSelected={dataParts.indexOf(part) === position ? 'is-red' : ''} />)
   console.log(parts)
   console.log(position)
@@ -38,9 +38,9 @@ function App() {
     </div>
   
   return (
-    <div>
+    <Background image={parts[position].img}>
       {comenzar ? App : Saludo}
-    </div>
+    </Background>
    
   )
 }
