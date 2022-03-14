@@ -37,6 +37,31 @@
   }
 }
 
-.is-red {
-  background-color: red;
+.is-red.is-red {
+  background-color: rgb(233, 123, 62);
+  color: white;
+  font-size: 1.1rem;
+}
+
+.botonera {
+  margin: auto;
+}
+
+.saludo {
+  text-align: center;
+  width: 100%;
+  color: white;
+  margin-top: 30%;
+}
+
+.saludo h1 {
+  font-size: 3.5rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: normal;
+  line-height: 3.7rem;
+  letter-spacing: .1rem;
+  width: 40%;
+  margin: auto;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 105px rgb(49, 79, 167, .5);
 }

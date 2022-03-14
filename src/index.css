@@ -5,7 +5,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #5DA684;
+  background-color: #314fa7;
+  background-image: url(http://cdn26.us1.fansshare.com/photo/brightbackgrounds/dark-blue-background-stars-space-for-tumblr-2040968743.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
 }
 
 code {
